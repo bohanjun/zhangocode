@@ -22,10 +22,8 @@ $(function(){
   var h=$(window).height();
   $("#iframe").height((h-headerH)+"px"); 
 });
-</script>
-<script type="text/javascript">
-  function zhango(){
-  $(".header-left-logo").css("background","url('https://s1.ax1x.com/2020/03/27/GCgwX6.png')");
+  window.onload=function zhango(){
+  $("#iframe",parent.document.body).contents().find(".header-left-logo").css("background","url('https://s1.ax1x.com/2020/03/27/GCgwX6.png')");
   };
 </script>
 </head>
