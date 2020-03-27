@@ -11,7 +11,7 @@ body{
   overflow-y:hidden
 }
 #iframe > .header-left-logo{
-  background:url('https://s1.ax1x.com/2020/03/27/GCcPZF.png') no-repeat!important;
+  background:url('https://s1.ax1x.com/2020/03/27/GCgwX6.png') no-repeat!important;
 }
 </style>
 <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
@@ -22,12 +22,15 @@ $(function(){
   var h=$(window).height();
   $("#iframe").height((h-headerH)+"px"); 
 });
-window.onload = function(){
-$(".header-left-logo").css("background","url('https://s1.ax1x.com/2020/03/27/GCcPZF.png')");
-};
 </script>
 </head>
 <body>
-<iframe id="iframe" frameborder="0" src="http://code.xueersi.com/" style="width:100%;"></iframe>
+<iframe id="iframe" frameborder="0" src="http://code.xueersi.com/" style="width:100%;">
+  <script type="text/javascript">
+    window.onload = function(){
+    $(".header-left-logo").css("background","url('https://s1.ax1x.com/2020/03/27/GCgwX6.png')");
+    };
+  </script>
+</iframe>
 </body>
 </html>
