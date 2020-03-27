@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<title>ZHANGO组织编程社区</title>
+</html>
+<style>
+.banner-root{
+dispaly:none!important;
+}
+</style>
+<body>
+<iframe id="mainiframe" width="100%" height="600" src="http://code.xueersi.com/" onload="changeFrameHeight()" frameborder="0" scrolling="auto"></iframe>
+</body>
+<script src="https://static.piterator.com/node_modules/jquery/dist/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>
+function changeFrameHeight(){
+        var ifm= document.getElementById("mainiframe");.
+        ifm.height=document.documentElement.clientHeight;
+    }
+    $(function(){ window.onresize=function(){	
+            changeFrameHeight(); }});
+$('a').attr("target","_self");
+$(".banner-root").css("dispaly","none");
+</script>
