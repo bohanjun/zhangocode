@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="author" content="http://www.softwhy.com/" />
-<title>ZHANGO组织编程社区</title>
-<style>
-body{
-  margin:0; 
-  padding:0; 
-  overflow-y:hidden
-}
-#iframe > .header-left-logo{
-  background:url('https://s1.ax1x.com/2020/03/27/GCgwX6.png') no-repeat!important;
-}
-</style>
-<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
-<script type="text/javascript"> 
-window.onerror=function(){return true;} 
-$(function(){ 
-  headerH = 0;  
-  var h=$(window).height();
-  $("#iframe").height((h-headerH)+"px"); 
-});
-  window.onload=function zhango(){
-  $("#iframe").contents().find(".header-left-logo").css("background","url('https://s1.ax1x.com/2020/03/27/GCgwX6.png')");
-  };
-</script>
+    <meta charset="utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>ZHANGO组织编程社区</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-y: hidden;
+        }
+
+    </style>
+    <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+    <script type="text/javascript">
+        window.onerror = function () { return true; }
+        $(function () {
+            headerH = 0;
+            var h = $(window).height();
+            $("#iframe").height((h - headerH) + "px");
+        });
+        window.onload = function(){
+            let test=document.getElementById('iframe').contentWindow.document.getElementsByName("header-left-logo");
+            test.style.background = "url('https://s1.ax1x.com/2020/03/27/GCgwX6.png') no-repeat";
+        };
+    </script>
 </head>
+
 <body>
-<iframe id="iframe" frameborder="0" src="http://code.xueersi.com/" style="width:100%;" onload="zhango()">
-</iframe>
+    <div style="height:82px;position:absolute;left:0px;right:17px;z-index:9999;background-color:#fff;box-sizing:border-box">
+        <div style="position:absolute;top:2px;left:20%;right:20%;">
+            <h2>ZHANGO组织编程社区</h2>
+        </div>
+        <div style="position:absolute;top:2px;right:20%;">
+            <h2>合作：<a href="http://www.xueersi.com" style="color:mediumblue" target="_blank">北京学而思教育科技有限公司</a></h2>
+        </div>
+    </div>
+    <iframe id="iframe" frameborder="0" src="http://code.xueersi.com/" style="width:100%;" onload="zhango()">
+    </iframe>
 </body>
+
 </html>
